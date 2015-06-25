@@ -1,11 +1,14 @@
-Ported libusb, libusb-compat to Android and added a few small changes to the Ubertooth (http://ubertooth.sourceforge.net/) host code to run on Android.  Otherwise, mainly cross-compiling the excellent work done by Michael Ossmann and others!  I hope others can build off of this.  
+Ported the Ubertooth host code in state of May 5, 2015 to run on Android, including Bluetooth Low Energy sniffing.
 
-Graphing library is AChartEngine: http://code.google.com/p/achartengine/
+Main features:
+	
+	- Capture Bluetooth Classic packets and display the data.
+	- Capture Bluetooth LE packets and display the data.
+	- Capture Bluetooth LE packets to a file (custom naming) and save it on the sdcard.
+	- Reset a Ubertooth device (needed after capturing).
 
-Only tested on a rooted Samsung Galaxy SII.  It would be great if someone could remove the need for root by removing USBMon.java and replacing it with an equivalent that uses the native Android USB host support.
-
+Tested on a rooted Samsung Galaxy S4. 
 Rebuild the libraries with ndk-build.
 
-Video demonstration available on YouTube:  http://youtu.be/lG_G_mLUQOw
+Thx to George Nychis and Jeroen Hiddink for their great code base.
 
-Me (George Nychis): http://www.andrew.cmu.edu/user/gnychis/
