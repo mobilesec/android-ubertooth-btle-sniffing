@@ -1,0 +1,42 @@
+This is host code for use with bluetooth_rxtx firmware.
+
+
+REQUIRED SOFTWARE
+
+These tools link to libbtbb > 0.8  (http://libbtbb.sourceforge.net/).  Svn trunk
+should always work the latest git verions of libbtbb.  Libbtbb can be built as
+follows:
+
+$ git clone git://git.code.sf.net/p/libbtbb/code libbtbb
+$ cd libbtbb/
+$ gmake
+$ sudo make install
+
+This software also requires libusb 1.0 or higher:
+
+http://www.libusb.org/
+
+
+THE TOOLS
+
+ubertooth-util: various utility functions including reboot into bootloader DFU
+mode.
+
+ubertooth-lap: sniffs a single Bluetooth channel and outputs LAPs of observed
+packets.
+
+ubertooth-uap: sniffs a single Bluetooth channel and determines the UAP of the
+device withe the LAP specified on the command line.
+
+ubertooth-dump: dumps a raw Bluetooth symbol stream from an Ubertooth board.
+If you pipe it into xxd, you should see various ones and zeros.  If you pipe it
+into dd, you can find out the transfer rate (should be 1 MB/s).  Timestamps are
+dumped to stderr.
+
+ubertooth-specan: ouputs signal strength data suitable for feeding into spectrum
+analyser software. e.g.
+
+ ubertooth-specan -G -q | feedgnuplot --stream 0.5 --domain --3d 
+
+will use feedgnuplot to drive gnuplot to draw a realtime animated 3D plot of the
+frequency spectrum.

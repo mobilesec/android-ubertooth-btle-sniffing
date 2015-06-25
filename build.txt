@@ -1,0 +1,54 @@
+d:\Temp\BeNomad\ubertooth-android-master>d:\Temp\BeNomad\android-ndk-r9c\ndk-build -B
+
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb device
+s
+List of devices attached
+3e0a5c38        device
+
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb tcpip
+5555
+restarting in TCP mode port: 5555
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb connec
+t 10.0.0.124
+connected to 10.0.0.124:5555
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb device
+s
+List of devices attached
+10.0.0.124:5555 device
+
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb device
+s
+List of devices attached
+10.0.0.124:5555 device
+
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb device
+s
+List of devices attached
+10.0.0.124:5555 device
+
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb instal
+l -r d:\Temp\BeNomad\ubertooth-android-master\bin\Ubertooth.apk
+463 KB/s (528583 bytes in 1.114s)
+        pkg: /data/local/tmp/Ubertooth.apk
+Success
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb instal
+l -r d:\Temp\BeNomad\ubertooth-android-master\bin\Ubertooth.apk
+470 KB/s (528578 bytes in 1.098s)
+        pkg: /data/local/tmp/Ubertooth.apk
+Success
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>adb instal
+l -r d:\Temp\BeNomad\ubertooth-android-master\bin\Ubertooth.apk
+523 KB/s (528578 bytes in 0.986s)
+        pkg: /data/local/tmp/Ubertooth.apk
+Success
+
+d:\Temp\BeNomad\adt-bundle-windows-x86_64-20131030\sdk\platform-tools>

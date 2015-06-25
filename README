@@ -1,0 +1,11 @@
+Ported libusb, libusb-compat to Android and added a few small changes to the Ubertooth (http://ubertooth.sourceforge.net/) host code to run on Android.  Otherwise, mainly cross-compiling the excellent work done by Michael Ossmann and others!  I hope others can build off of this.  
+
+Graphing library is AChartEngine: http://code.google.com/p/achartengine/
+
+Only tested on a rooted Samsung Galaxy SII.  It would be great if someone could remove the need for root by removing USBMon.java and replacing it with an equivalent that uses the native Android USB host support.
+
+Rebuild the libraries with ndk-build.
+
+Video demonstration available on YouTube:  http://youtu.be/lG_G_mLUQOw
+
+Me (George Nychis): http://www.andrew.cmu.edu/user/gnychis/

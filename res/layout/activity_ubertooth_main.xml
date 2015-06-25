@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Scan Spectrum" />
+
+        <Button
+            android:id="@+id/button_resetDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Reset Device" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/button_start_btle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Start Btle" />
+
+        <Button
+            android:id="@+id/button_stop_btle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Stop Btle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/button_start_rxLAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Start LAP&apos;s" />
+
+        <Button
+            android:id="@+id/button_stop_rxLAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Stop LAP&apos;s" />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/llline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/button_file_btle_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Start BTLE file" />
+
+        <Button
+            android:id="@+id/button_file_btle_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Stop BTLE file" />
+    </LinearLayout>
+    
+    
+
+    <!--
+          <TextView
+        android:id="@+id/tv_btle"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_weight="2.44"
+        android:ems="10"
+        android:gravity="bottom"
+        android:maxLines="32"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:text="BTLE_results" />
+    -->
+
+        <EditText
+            android:id="@+id/editText_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Insert filename"
+            android:inputType="textPersonName">
+            <requestFocus />
+        </EditText>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="266dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:maxLines="32"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:text="Results" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
